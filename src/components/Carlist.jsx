@@ -40,7 +40,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-material.css";
 
-import Addcar from "./Addcar";
+import Addcar from "./AddCar";
 import Editcar from "./Editcar";
 
 function Carlist() {

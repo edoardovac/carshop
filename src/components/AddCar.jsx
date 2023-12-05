@@ -21,7 +21,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 
-export default function Addcar(props) {
+function AddCar(props) {
 
     const [open, setOpen] = React.useState(false);
     const [car, setCar] = React.useState({
@@ -123,3 +123,5 @@ export default function Addcar(props) {
     </React.Fragment>
     )
 }
+
+export default AddCar;
