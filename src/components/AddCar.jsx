@@ -13,7 +13,7 @@
 // then close the form
 // 39. edit functionality --> create new component EditCar.jsx
 
-import React from 'react'
+import { useState } from "react";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Dialog from '@mui/material/Dialog';
@@ -23,8 +23,8 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 function AddCar(props) {
 
-    const [open, setOpen] = React.useState(false);
-    const [car, setCar] = React.useState({
+    const [open, setOpen] = useState(false);
+    const [car, setCar] = useState({
         brand: '', model: '', color: '', fuel: '', year: '', price: ''
     })
 
