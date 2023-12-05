@@ -46,7 +46,7 @@ function AddCar(props) {
     }
 
     return(
-        <React.Fragment>
+        <>
       <Button  variant="contained" style={{margin: 10}} onClick={handleClickOpen}>
         Add Car
       </Button>
@@ -120,7 +120,7 @@ function AddCar(props) {
           <Button onClick={addCar}>Save</Button>
         </DialogActions>
       </Dialog>
-    </React.Fragment>
+    </>
     )
 }
 

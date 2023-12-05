@@ -4,7 +4,7 @@
 // create new run in eslintrc.cjs
 // 'reach/prop-types': 0,
 
-import React from "react";
+import { useState } from "react";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
@@ -13,8 +13,8 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 
 function EditCar(props) {
-  const [open, setOpen] = React.useState(false);
-  const [car, setCar] = React.useState({
+  const [open, setOpen] = useState(false);
+  const [car, setCar] = useState({
     brand: "",
     model: "",
     color: "",
@@ -49,7 +49,7 @@ function EditCar(props) {
   };
 
   return (
-    <React.Fragment>
+    <>
       <Button onClick={handleClickOpen}>Edit</Button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Edit Car</DialogTitle>
@@ -121,7 +121,7 @@ function EditCar(props) {
           <Button onClick={updateCar}>Save</Button>
         </DialogActions>
       </Dialog>
-    </React.Fragment>
+    </>
   );
 }
 
